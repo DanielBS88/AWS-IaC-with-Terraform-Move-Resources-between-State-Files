@@ -4,6 +4,5 @@
 #}
 output "policy_arn" {
   description = "ARN of the IAM policy"
-  value       = aws_iam_policy.this.arn
+  value       = try(aws_iam_policy.this[0].arn, null)
 }
-

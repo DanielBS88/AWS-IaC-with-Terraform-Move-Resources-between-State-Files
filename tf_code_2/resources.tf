@@ -1,4 +1,6 @@
 resource "aws_iam_policy" "this" {
+  count = 0
+
   name = var.policy_name
 
   policy = jsonencode({
