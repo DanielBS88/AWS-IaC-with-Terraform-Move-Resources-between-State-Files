@@ -1,12 +1,13 @@
 resource "aws_iam_policy" "this" {
-  name = var.policy_name
-
+  name   = "custom_policy"
   policy = jsonencode({
     Version = "2012-10-17"
-    Statement = [{
-      Effect   = "Allow"
-      Action   = ["s3:ListAllMyBuckets"]
-      Resource = "*"
-    }]
+    Statement = [
+      {
+        Effect   = "Allow"
+        Action   = ["s3:ListAllMyBuckets"]
+        Resource = "*"
+      }
+    ]
   })
 }
