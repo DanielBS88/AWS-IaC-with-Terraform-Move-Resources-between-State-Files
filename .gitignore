@@ -1,9 +1,4 @@
-# Terraform
 .terraform/
 *.tfstate
 *.tfstate.*
-.crash.log
-terraform.tfvars.backup
-
-# OS
-.DS_Store
+.terraform.lock.hcl

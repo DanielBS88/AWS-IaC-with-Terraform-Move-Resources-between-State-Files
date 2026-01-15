@@ -4,6 +4,6 @@ variable "region" {
 }
 
 variable "policy_name" {
-  description = "Name of the IAM policy"
+  description = "IAM policy name"
   type        = string
 }

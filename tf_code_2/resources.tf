@@ -1,5 +1,6 @@
 resource "aws_iam_policy" "this" {
-  name = "custom_policy"
+  name = var.policy_name
+
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
